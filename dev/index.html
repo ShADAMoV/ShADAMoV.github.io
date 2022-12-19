@@ -1,0 +1,1312 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная</title>
+    <link href="./src/slick/slick.css" rel="stylesheet">
+    <link href="./src/slick/slick-theme.css" rel="stylesheet">
+    <link href="./src/styles/main.scss" rel="stylesheet">
+    <link href="./src/styles/components/price.scss" rel="stylesheet">
+    <link href="./src/styles/components/feedback.scss" rel="stylesheet">
+    <link href="./src/styles/components/product-card.scss" rel="stylesheet">
+    <link href="./src/styles/components/example.scss" rel="stylesheet">
+    <link href="./src/styles/components/popup.scss" rel="stylesheet">
+    <link href="./src/styles/components/header.scss" rel="stylesheet">
+    <link href="./src/styles/components/nav.scss" rel="stylesheet">
+    <link href="./src/styles/components/menu.scss" rel="stylesheet">
+    <link href="./src/styles/components/work-stages.scss" rel="stylesheet">
+    <link href="./src/styles/components/simple-text.scss" rel="stylesheet">
+    <link href="./src/styles/components/advantages.scss" rel="stylesheet">
+    <link href="./src/styles/components/payment.scss" rel="stylesheet">
+    <link href="./src/styles/components/contacts.scss" rel="stylesheet">
+</head>
+
+<body>
+    <div class="popup">
+        <div class="container">
+            <div class="popup__content">
+                <div class="popup__close">
+                    <div class="popup__close-line1"></div>
+                    <div class="popup__close-line2"></div>
+                </div>
+                <div class="popup__title"></div>
+                <p class="popup__text"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="container">
+            <div class="menu__content">
+                <div class="header__social">
+                    <a href="#" class="header__social-item">
+                        <img src="./src/assets/images/vkIcon.png" alt="VK">
+                    </a>
+                    <a href="#" class="header__social-item">
+                        <img src="./src/assets/images/whatsAppIcon.png" alt="WhatsApp">
+                    </a>
+                    <a href="#" class="header__social-item">
+                        <img src="./src/assets/images/telegramIcon.png" alt="Telegram">
+                    </a>
+                    <a href="#" class="header__social-item">
+                        <img src="./src/assets/images/facebookIcon.png" alt="facebook">
+                    </a>
+                    <a href="#" class="header__social-item">
+                        <img src="./src/assets/images/instagramIcon.png" alt="Instagram">
+                    </a>
+                    <a href="#" class="header__social-item">
+                        <img src="./src/assets/images/youtubeIcon.png" alt="Youtube">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <div class="dropdown">
+                        <button class="drop">Ремонт турбин</button>
+                        <img src="./src/assets/images/arrowIcon.png" alt="arrow">
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="#" class="drop">Восстановление турбин</a>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="#" class="drop">Новые турбины</a>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="#" class="drop">Ремонт двигателя</a>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="drop" style="white-space: nowrap;">О компании</button>
+                        <img src="./src/assets/images/arrowIcon.png" alt="arrow">
+                        <div class="dropdown-content">
+                            <a href="#">Гарантия</a>
+                            <a href="#">Доставка</a>
+                            <a href="#">Отзывы</a>
+                            <a href="#">Реквизиты</a>
+                            <a href="#">Блог</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__burger">
+                    <div class="header__burger-line1"></div>
+                    <div class="header__burger-line2"></div>
+                    <div class="header__burger-line3"></div>
+                </div>
+                <a href="#" class="header__logo">
+                    <img src="./src/assets/images/logoHeader.png" alt="Logo">
+                </a>
+                <div class="search-wrapper">
+                    <input type="search" name="search" id="search" placeholder="Введите марку авто">
+                    <img src="./src/assets/images/loopIcon.png" alt="loop">
+                </div>
+                <div class="header__social">
+                    <a href="#" class="header__social-item">
+                        <img src="./src/assets/images/vkIcon.png" alt="VK">
+                    </a>
+                    <a href="#" class="header__social-item">
+                        <img src="./src/assets/images/whatsAppIcon.png" alt="WhatsApp">
+                    </a>
+                    <a href="#" class="header__social-item">
+                        <img src="./src/assets/images/telegramIcon.png" alt="Telegram">
+                    </a>
+                    <a href="#" class="header__social-item">
+                        <img src="./src/assets/images/facebookIcon.png" alt="facebook">
+                    </a>
+                    <a href="#" class="header__social-item">
+                        <img src="./src/assets/images/instagramIcon.png" alt="Instagram">
+                    </a>
+                    <a href="#" class="header__social-item">
+                        <img src="./src/assets/images/youtubeIcon.png" alt="Youtube">
+                    </a>
+                </div>
+                <div class="header__contacts">
+                    <a href="tel:+7 499 703 30 66" class="header__number">+7 499 703 30 66</a>
+                    <a href="tel:+7 925 388 33 30" class="header__number">+7 925 388 33 30</a>
+                    <div class="header__working-hours">с 09:00 до 20:00</div>
+                </div>
+                <div class="header__button">Заказать звонок</div>
+                <div class="header__button_mobile"><img src="./src/assets/images/phoneIcon.png" alt="Phone"></div>
+                <div class="search-wrapper">
+                    <input type="search" name="search" id="searchMobile" placeholder="Введите марку авто">
+                    <img src="./src/assets/images/loopIcon.png" alt="loop">
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-wrapper">
+            <div class="container">
+                <div class="nav-content">
+                    <nav class="nav">
+                        <div class="dropdown">
+                            <button class="drop">Ремонт турбин</button>
+                            <img src="./src/assets/images/arrowIcon.png" alt="arrow">
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a href="#" class="drop">Восстановление турбин</a>
+                        </div>
+                        <div class="dropdown">
+                            <a href="#" class="drop">Новые турбины</a>
+                        </div>
+                        <div class="dropdown">
+                            <a href="#" class="drop">Ремонт двигателя</a>
+                        </div>
+                        <div class="dropdown">
+                            <button class="drop" style="white-space: nowrap;">О компании</button>
+                            <img src="./src/assets/images/arrowIcon.png" alt="arrow">
+                            <div class="dropdown-content">
+                                <a href="#">Гарантия</a>
+                                <a href="#">Доставка</a>
+                                <a href="#">Отзывы</a>
+                                <a href="#">Реквизиты</a>
+                                <a href="#">Блог</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="search-wrapper">
+                        <input type="search" name="search" id="search" placeholder="Введите марку авто">
+                        <img src="./src/assets/images/loopIcon.png" alt="loop">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="price">
+            <div class="container">
+                <div class="price__content">
+                    <h2 class="price__title">Цены</h2>
+                    <table class="price__table">
+                        <tr>
+                            <td class="characteristics__value">Новые турбины</td>
+                            <td class="characteristics__value">от 30 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td class="characteristics__value">Восстановление турбины</td>
+                            <td class="characteristics__value">от 16 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td class="characteristics__value">Катриджи для турбин</td>
+                            <td class="characteristics__value">от 10 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td class="characteristics__value">Диагностика турбин</td>
+                            <td class="characteristics__value">от 2 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td class="characteristics__value">Установка турбин</td>
+                            <td class="characteristics__value">от 5000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td class="characteristics__value">Запчасти для турбин</td>
+                            <td class="characteristics__value">от 2000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td class="characteristics__value">Оригинальные ремкомплекты для турбин</td>
+                            <td class="characteristics__value">от 4 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td class="characteristics__value">Ремкомплекты турбин</td>
+                            <td class="characteristics__value">от 4 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td class="characteristics__value">Ремкомплект актуатора</td>
+                            <td class="characteristics__value">от 6 000 ₽</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <div class="container">
+                <div class="feedback__content">
+                    <div class="feedback__image-block_invisible">
+                        <div class="feedback__image">
+                            <img src="src/assets/images/feedbackTurbin.png" alt="Turbin">
+                        </div>
+                        <div class="feedback__text-wrapper_invisible">
+                            <div class="feedback__stock">Акция! Скидка до 10%!</div>
+                            <h2 class="feedback__title">Сдай свою турбину и получи скидку</h2>
+                        </div>
+                    </div>
+                    <div class="feedback__main">
+                        <div class="feedback__text-wrapper">
+                            <div class="feedback__stock">Акция! Скидка до 10%!</div>
+                            <h2 class="feedback__title">Сдай свою турбину и получи скидку</h2>
+                        </div>
+                        <form action="#" class="feedback__form" name="feedback__form" id="feedback__form">
+                            <input type="text" class="feedback__name" name="feedback__name" id="feedback__name"
+                                placeholder="Ваше имя">
+                            <input type="text" class="feedback__phone" name="feedback__phone" id="feedback__phone"
+                                placeholder="Ваш телефон">
+                            <div class="feedback__button-wrapper">
+                                <div class="feedback__agreement">
+                                    Нажимая на кнопку, Вы даете согласие на
+                                    <a class="feedback__agreement_yelow" href="#">обработку Ваших персональных
+                                        данных</a>
+                                </div>
+                                <input type="submit" class="feedback__button" value="Получить скидку">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="feedback__image-block">
+                        <div class="feedback__image">
+                            <img src="src/assets/images/feedbackTurbin.png" alt="Turbin">
+                        </div>
+                        <div class="feedback__text-wrapper_invisible">
+                            <div class="feedback__stock">Акция! Скидка до 10%!</div>
+                            <h2 class="feedback__title">Сдай свою турбину и получи скидку</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-card">
+            <div class="container">
+                <div class="product-card__content">
+                    <div class="product-card__title">Новая турбина для HOLDER Traktor 6001/3</div>
+                    <div class="product-card__info">
+                        <div class="product-card__image-wrapper">
+                            <div class="product-card__image">
+                                <img src="src/assets/images/productCard1.png" alt="product">
+                            </div>
+                        </div>
+                        <div class="product-card__characteristics characteristics">
+                            <div class="characteristics__title">Характиристики</div>
+                            <div class="characteristics__table">
+                                <div class="characteristics__item">
+                                    <div class="characteristics__name">Страна производства товара</div>
+                                    <div class="characteristics__separator"></div>
+                                    <div class="characteristics__value">2360 ccm</div>
+                                </div>
+                                <div class="characteristics__item">
+                                    <div class="characteristics__name">Мощность</div>
+                                    <div class="characteristics__separator"></div>
+                                    <div class="characteristics__value">59HP</div>
+                                </div>
+                                <div class="characteristics__item">
+                                    <div class="characteristics__name">Тип двигателя</div>
+                                    <div class="characteristics__separator"></div>
+                                    <div class="characteristics__value">6001/3</div>
+                                </div>
+                                <div class="characteristics__item">
+                                    <div class="characteristics__name">Год выпуска</div>
+                                    <div class="characteristics__separator"></div>
+                                    <div class="characteristics__value">Aug.1980&nbsp;bis&nbsp;Okt.1996</div>
+                                </div>
+                                <div class="characteristics__item">
+                                    <div class="characteristics__name">ОЕМ – код:</div>
+                                    <div class="characteristics__separator"></div>
+                                    <div class="characteristics__value">Новая&nbsp;турбина 60011400140</div>
+                                </div>
+                                <div class="characteristics__item">
+                                    <div class="characteristics__name">Оригинальный номер:</div>
+                                    <div class="characteristics__separator"></div>
+                                    <div class="characteristics__value">Новая&nbsp;турбина 53249886000</div>
+                                </div>
+                            </div>
+                            <div class="product-card__price-wrapper">
+                                <div class="product-card__price">Цена по запросу</div>
+                                <button class="product-card__button">Заказать со скидкой</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card__status">
+                        <div class="product-card__status-title">Запчасти в наличии</div>
+                        <div class="product-card__status-text">Запчасти есть в наличии на складе по всем маркам а/м.
+                            Поставки осуществляются регулярно без перебоев. На ценах никак не отражается.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="example">
+            <div class="container">
+                <div class="example__content">
+                    <div class="example__title">Примеры работ</div>
+                    <div class="example__list">
+                        <div class="example__item">
+                            <div class="example__image">
+                                <picture>
+                                    <source srcset="./src/assets/images/example1_700px.png" media="(max-width: 700px)">
+                                    <source srcset="./src/assets/images/example1.png">
+                                    <img srcset="./src/assets/images/example1.png" alt="My default image">
+                                </picture>
+                            </div>
+                            <div class="example__info">
+                                <div class="example__breakdown">
+                                    <div class="example__breakdown-title">В техцентр ТУРБОРУ обратился клиент с жалобой
+                                        на
+                                        повышенный расход</div>
+                                    <div class="example__breakdown-text">
+                                        <p>
+                                            В техцентр ТУРБОРУ обратился клиент с жалобой на повышенный расход масла
+                                            ДВС. Автомобиль Шкода Октавия, 2012 г. в., бензиновый мотор 1.8 л., пробег
+                                            170000 км. В ходе диагностики было выявлено: повышенный осевой люфт ротора
+                                            ТКР, масло в напорных патрубках, повышенное противодавление в системе
+                                            выпуска ОГ, что свидетельствует о снижении пропускной способности
+                                            каталитического нейтрализатора ОГ. Было принято решение снять
+                                            турбокомпрессор для дальнейшей диагностики. Турбокомпрессор демонтирован.
+                                            После разбора и дефектовки ТКР обнаружен износ упорного подшипника ТКР.
+                                            Заменили ремкомплект турбины, произвели балансировку и проверку картриджа на
+                                            стенде. Промыли патрубки системы впуска. Удалили забитый катализатор,
+                                            прошили ЭБУ под нормы ЕВРО-2. В результате выполненных работ расход масла
+                                            снизился до минимальных значений.
+
+                                            От постоянного клиента (техцентр) в работу поступил турбокомпрессор GARRETT
+                                            GTA2056VK от Мерседес МЛ320, 2008 г.в., двигатель OM642. В процессе
+                                            диагностики были выявлены следующие неисправности: Повышенный радиальный
+                                            люфт ротора ТКР, затруднённый ход привода механизма изменяемой геометрии,
+                                            износ зубчатой передачи электронного актуатора, повышен "ампераж"
+                                            электромотора актуатора. После снятия корпусов турбокомпрессора обнаружены
+                                            повреждения турбинного колеса в результате попадания посторонних
+                                            частиц/предметов по разгонной части лопастей, а также повреждения лопаток
+                                            механизма РСА (регулируемый сопловой аппарат). Впоследствии подтвердилось
+                                            предположение о том, что "посыпались" выпускные коллектора, частицы которых
+                                            попали в турбину и вызвали соответствующие повреждения. После разбора
+                                            картриджа обнаружен абразивный износ подшипника скольжения, шеек вала
+                                            ротора. Биение вала превышало допустимые нормы. Для восстановления
+                                            турбокомпрессора требовалась замена ремкомплекта, ротора с колесом турбины,
+                                            механизма РСА, ремонт или замена механической части актуатора. В целях
+                                            сокращения сроков производства работ клиент принял решение приобрести у нас
+                                            готовый восстановленный оригинальный турбокомпрессор GARRETT, в обмен на
+                                            неисправный. Также клиенту были даны рекомендации для устранения
+                                            неисправностей автомобиля, повлекших выход из строя турбокомпрессора.
+
+                                            Поступил в работу турбокомпрессор от БМВ 328 Ф30 2012 г., пробег около
+                                            140000 км., мотор N20B20, турбокомпрессор Mitsubishi с вакуумным актуатором.
+                                            Клиент из Ростовской обл., отправил турбину транспортной компанией. Были
+                                            жалобы на посторонние звуки (дребезжащий металлический звук), особенно на
+                                            непрогретом моторе, ограничение мощности двигателя, "провалы" при разгоне,
+                                            на панели приборов отображалось предупреждение "ошибка привода". При
+                                            первичной диагностике обнаружено: повышенный осевой люфт ротора ТКР,
+                                            повышенный люфт и подклинивание в приводе клапана "Вестгейт", лопасти
+                                            компрессорного колеса "отпескоструены", имеют закруглённую форму. После
+                                            разбора картриджа констатировали значительный износ упорного подшипника,
+                                            износ посадочных мест вала под стопорными кольцами, повреждения мембраны
+                                            байпасного клапана. По турбокомпрессору произведены следующие работы: замена
+                                            картриджа в сборе, замена втулки оси привода клапана Вестгейт (перевтул),
+                                            замена байпасного клапана. Срок ремонта составил 1 рабочий день после
+                                            согласования с клиентом. Отправили отремонтированный турбокомпрессор той же
+                                            ТК.
+
+                                            Соответствующие рекомендации по установке турбокомпрессора и обслуживанию
+                                            автомобиля даны в письменном виде. Предоставлена гарантия на выполненные
+                                            работы сроком 12 месяцев.
+
+                                            К нам в техцентр обратился клиент с автомобилем WV TOUAREG 2009 года выпуска
+                                            с пробегом 285000 км. c двигателем CASA. Жалобы клиента были на потерю тяги,
+                                            черный дым, течь масла. Произведя углубленную диагностику автомобиля были
+                                            выявлены следующие замечания:
+
+                                            Сильный износ колеса компрессора ТКР.
+                                            Износ механической части актуатора.
+                                            Подклинивание геометрии ТКР.
+                                            Повышенное противодавление выхлопной системы.
+                                            Течь теплообменника в развале блока ДВС.
+                                            Отклонения по коррекциям топливных форсунок за пределами допустимых
+                                            значений.
+
+                                            Клиенту был предоставлен перечень необходимых работ, список запчастей и
+                                            сроки ремонта. Далее заказчик принял решение выполнить весь перечень
+                                            рекомендаций, чтобы привести автомобиль в идеальное состояние. Нами был
+                                            произведен полный ремонт ТКР с заменой картриджа и актуатора на оригинальный
+                                            Hella. Удаление сажевого фильтра с программным отключением под нормы
+                                            Евро2.Переуплотнили теплообменник в развале блока ДВС а так же были
+                                            восстановлены топливные форсунки. Произведено полное ТО с заменой масла во
+                                            всех агрегатах. После контрольных проверок и тестов автомобиль был выдан
+                                            клиенту, который в дальнейшем стал нашим постоянным клиентом и приезжает на
+                                            плановое ТО каждые 7500 км.
+                                        </p>
+                                    </div>
+                                    <button class="example__button">Читать дальше</button>
+                                </div>
+                                <div class="example__price">Стоимость: <span>30 000 ₽</span></div>
+                            </div>
+                        </div>
+                        <div class="example__item">
+                            <div class="example__image">
+                                <picture>
+                                    <source srcset="./src/assets/images/example1_700px.png" media="(max-width: 700px)">
+                                    <source srcset="./src/assets/images/example1.png">
+                                    <img srcset="./src/assets/images/example1.png" alt="My default image">
+                                </picture>
+                            </div>
+                            <div class="example__info">
+                                <div class="example__breakdown">
+                                    <div class="example__breakdown-title">Проверка другого текста</div>
+                                    <div class="example__breakdown-text">
+                                        <p>
+                                            Всё должно быть заменено, как в заголовке так и тута.
+
+                                            От постоянного клиента (техцентр) в работу поступил турбокомпрессор GARRETT
+                                            GTA2056VK от Мерседес МЛ320, 2008 г.в., двигатель OM642. В процессе
+                                            диагностики были выявлены следующие неисправности: Повышенный радиальный
+                                            люфт ротора ТКР, затруднённый ход привода механизма изменяемой геометрии,
+                                            износ зубчатой передачи электронного актуатора, повышен "ампераж"
+                                            электромотора актуатора. После снятия корпусов турбокомпрессора обнаружены
+                                            повреждения турбинного колеса в результате попадания посторонних
+                                            частиц/предметов по разгонной части лопастей, а также повреждения лопаток
+                                            механизма РСА (регулируемый сопловой аппарат). Впоследствии подтвердилось
+                                            предположение о том, что "посыпались" выпускные коллектора, частицы которых
+                                            попали в турбину и вызвали соответствующие повреждения. После разбора
+                                            картриджа обнаружен абразивный износ подшипника скольжения, шеек вала
+                                            ротора. Биение вала превышало допустимые нормы. Для восстановления
+                                            турбокомпрессора требовалась замена ремкомплекта, ротора с колесом турбины,
+                                            механизма РСА, ремонт или замена механической части актуатора. В целях
+                                            сокращения сроков производства работ клиент принял решение приобрести у нас
+                                            готовый восстановленный оригинальный турбокомпрессор GARRETT, в обмен на
+                                            неисправный. Также клиенту были даны рекомендации для устранения
+                                            неисправностей автомобиля, повлекших выход из строя турбокомпрессора.
+
+                                            Поступил в работу турбокомпрессор от БМВ 328 Ф30 2012 г., пробег около
+                                            140000 км., мотор N20B20, турбокомпрессор Mitsubishi с вакуумным актуатором.
+                                            Клиент из Ростовской обл., отправил турбину транспортной компанией. Были
+                                            жалобы на посторонние звуки (дребезжащий металлический звук), особенно на
+                                            непрогретом моторе, ограничение мощности двигателя, "провалы" при разгоне,
+                                            на панели приборов отображалось предупреждение "ошибка привода". При
+                                            первичной диагностике обнаружено: повышенный осевой люфт ротора ТКР,
+                                            повышенный люфт и подклинивание в приводе клапана "Вестгейт", лопасти
+                                            компрессорного колеса "отпескоструены", имеют закруглённую форму. После
+                                            разбора картриджа констатировали значительный износ упорного подшипника,
+                                            износ посадочных мест вала под стопорными кольцами, повреждения мембраны
+                                            байпасного клапана. По турбокомпрессору произведены следующие работы: замена
+                                            картриджа в сборе, замена втулки оси привода клапана Вестгейт (перевтул),
+                                            замена байпасного клапана. Срок ремонта составил 1 рабочий день после
+                                            согласования с клиентом. Отправили отремонтированный турбокомпрессор той же
+                                            ТК.
+
+                                            Соответствующие рекомендации по установке турбокомпрессора и обслуживанию
+                                            автомобиля даны в письменном виде. Предоставлена гарантия на выполненные
+                                            работы сроком 12 месяцев.
+
+                                            К нам в техцентр обратился клиент с автомобилем WV TOUAREG 2009 года выпуска
+                                            с пробегом 285000 км. c двигателем CASA. Жалобы клиента были на потерю тяги,
+                                            черный дым, течь масла. Произведя углубленную диагностику автомобиля были
+                                            выявлены следующие замечания:
+
+                                            Сильный износ колеса компрессора ТКР.
+                                            Износ механической части актуатора.
+                                            Подклинивание геометрии ТКР.
+                                            Повышенное противодавление выхлопной системы.
+                                            Течь теплообменника в развале блока ДВС.
+                                            Отклонения по коррекциям топливных форсунок за пределами допустимых
+                                            значений.
+
+                                            Клиенту был предоставлен перечень необходимых работ, список запчастей и
+                                            сроки ремонта. Далее заказчик принял решение выполнить весь перечень
+                                            рекомендаций, чтобы привести автомобиль в идеальное состояние. Нами был
+                                            произведен полный ремонт ТКР с заменой картриджа и актуатора на оригинальный
+                                            Hella. Удаление сажевого фильтра с программным отключением под нормы
+                                            Евро2.Переуплотнили теплообменник в развале блока ДВС а так же были
+                                            восстановлены топливные форсунки. Произведено полное ТО с заменой масла во
+                                            всех агрегатах. После контрольных проверок и тестов автомобиль был выдан
+                                            клиенту, который в дальнейшем стал нашим постоянным клиентом и приезжает на
+                                            плановое ТО каждые 7500 км.
+                                        </p>
+                                    </div>
+                                    <button class="example__button">Читать дальше</button>
+                                </div>
+                                <div class="example__price">Стоимость: <span>15 000 ₽</span></div>
+                            </div>
+                        </div>
+                        <div class="example__item">
+                            <div class="example__image">
+                                <picture>
+                                    <source srcset="./src/assets/images/example1_700px.png" media="(max-width: 700px)">
+                                    <source srcset="./src/assets/images/example1.png">
+                                    <img srcset="./src/assets/images/example1.png" alt="My default image">
+                                </picture>
+                            </div>
+                            <div class="example__info">
+                                <div class="example__breakdown">
+                                    <div class="example__breakdown-title">В техцентр ТУРБОРУ обратился клиент с жалобой
+                                        на
+                                        повышенный расход</div>
+                                    <div class="example__breakdown-text">
+                                        <p>
+                                            В техцентр ТУРБОРУ обратился клиент с жалобой на повышенный расход масла
+                                            ДВС. Автомобиль Шкода Октавия, 2012 г. в., бензиновый мотор 1.8 л., пробег
+                                            170000 км. В ходе диагностики было выявлено: повышенный осевой люфт ротора
+                                            ТКР, масло в напорных патрубках, повышенное противодавление в системе
+                                            выпуска ОГ, что свидетельствует о снижении пропускной способности
+                                            каталитического нейтрализатора ОГ. Было принято решение снять
+                                            турбокомпрессор для дальнейшей диагностики. Турбокомпрессор демонтирован.
+                                            После разбора и дефектовки ТКР обнаружен износ упорного подшипника ТКР.
+                                            Заменили ремкомплект турбины, произвели балансировку и проверку картриджа на
+                                            стенде. Промыли патрубки системы впуска. Удалили забитый катализатор,
+                                            прошили ЭБУ под нормы ЕВРО-2. В результате выполненных работ расход масла
+                                            снизился до минимальных значений.
+
+                                            От постоянного клиента (техцентр) в работу поступил турбокомпрессор GARRETT
+                                            GTA2056VK от Мерседес МЛ320, 2008 г.в., двигатель OM642. В процессе
+                                            диагностики были выявлены следующие неисправности: Повышенный радиальный
+                                            люфт ротора ТКР, затруднённый ход привода механизма изменяемой геометрии,
+                                            износ зубчатой передачи электронного актуатора, повышен "ампераж"
+                                            электромотора актуатора. После снятия корпусов турбокомпрессора обнаружены
+                                            повреждения турбинного колеса в результате попадания посторонних
+                                            частиц/предметов по разгонной части лопастей, а также повреждения лопаток
+                                            механизма РСА (регулируемый сопловой аппарат). Впоследствии подтвердилось
+                                            предположение о том, что "посыпались" выпускные коллектора, частицы которых
+                                            попали в турбину и вызвали соответствующие повреждения. После разбора
+                                            картриджа обнаружен абразивный износ подшипника скольжения, шеек вала
+                                            ротора. Биение вала превышало допустимые нормы. Для восстановления
+                                            турбокомпрессора требовалась замена ремкомплекта, ротора с колесом турбины,
+                                            механизма РСА, ремонт или замена механической части актуатора. В целях
+                                            сокращения сроков производства работ клиент принял решение приобрести у нас
+                                            готовый восстановленный оригинальный турбокомпрессор GARRETT, в обмен на
+                                            неисправный. Также клиенту были даны рекомендации для устранения
+                                            неисправностей автомобиля, повлекших выход из строя турбокомпрессора.
+
+                                            Поступил в работу турбокомпрессор от БМВ 328 Ф30 2012 г., пробег около
+                                            140000 км., мотор N20B20, турбокомпрессор Mitsubishi с вакуумным актуатором.
+                                            Клиент из Ростовской обл., отправил турбину транспортной компанией. Были
+                                            жалобы на посторонние звуки (дребезжащий металлический звук), особенно на
+                                            непрогретом моторе, ограничение мощности двигателя, "провалы" при разгоне,
+                                            на панели приборов отображалось предупреждение "ошибка привода". При
+                                            первичной диагностике обнаружено: повышенный осевой люфт ротора ТКР,
+                                            повышенный люфт и подклинивание в приводе клапана "Вестгейт", лопасти
+                                            компрессорного колеса "отпескоструены", имеют закруглённую форму. После
+                                            разбора картриджа констатировали значительный износ упорного подшипника,
+                                            износ посадочных мест вала под стопорными кольцами, повреждения мембраны
+                                            байпасного клапана. По турбокомпрессору произведены следующие работы: замена
+                                            картриджа в сборе, замена втулки оси привода клапана Вестгейт (перевтул),
+                                            замена байпасного клапана. Срок ремонта составил 1 рабочий день после
+                                            согласования с клиентом. Отправили отремонтированный турбокомпрессор той же
+                                            ТК.
+
+                                            Соответствующие рекомендации по установке турбокомпрессора и обслуживанию
+                                            автомобиля даны в письменном виде. Предоставлена гарантия на выполненные
+                                            работы сроком 12 месяцев.
+
+                                            К нам в техцентр обратился клиент с автомобилем WV TOUAREG 2009 года выпуска
+                                            с пробегом 285000 км. c двигателем CASA. Жалобы клиента были на потерю тяги,
+                                            черный дым, течь масла. Произведя углубленную диагностику автомобиля были
+                                            выявлены следующие замечания:
+
+                                            Сильный износ колеса компрессора ТКР.
+                                            Износ механической части актуатора.
+                                            Подклинивание геометрии ТКР.
+                                            Повышенное противодавление выхлопной системы.
+                                            Течь теплообменника в развале блока ДВС.
+                                            Отклонения по коррекциям топливных форсунок за пределами допустимых
+                                            значений.
+
+                                            Клиенту был предоставлен перечень необходимых работ, список запчастей и
+                                            сроки ремонта. Далее заказчик принял решение выполнить весь перечень
+                                            рекомендаций, чтобы привести автомобиль в идеальное состояние. Нами был
+                                            произведен полный ремонт ТКР с заменой картриджа и актуатора на оригинальный
+                                            Hella. Удаление сажевого фильтра с программным отключением под нормы
+                                            Евро2.Переуплотнили теплообменник в развале блока ДВС а так же были
+                                            восстановлены топливные форсунки. Произведено полное ТО с заменой масла во
+                                            всех агрегатах. После контрольных проверок и тестов автомобиль был выдан
+                                            клиенту, который в дальнейшем стал нашим постоянным клиентом и приезжает на
+                                            плановое ТО каждые 7500 км.
+                                        </p>
+                                    </div>
+                                    <button class="example__button">Читать дальше</button>
+                                </div>
+                                <div class="example__price">Стоимость: <span>1 000 ₽</span></div>
+                            </div>
+                        </div>
+                        <div class="example__item">
+                            <div class="example__image">
+                                <picture>
+                                    <source srcset="./src/assets/images/example1_700px.png" media="(max-width: 700px)">
+                                    <source srcset="./src/assets/images/example1.png">
+                                    <img srcset="./src/assets/images/example1.png" alt="My default image">
+                                </picture>
+                            </div>
+                            <div class="example__info">
+                                <div class="example__breakdown">
+                                    <div class="example__breakdown-title">Проверка другого текста</div>
+                                    <div class="example__breakdown-text">
+                                        <p>
+                                            Всё должно быть заменено, как в заголовке так и тута.
+
+                                            От постоянного клиента (техцентр) в работу поступил турбокомпрессор GARRETT
+                                            GTA2056VK от Мерседес МЛ320, 2008 г.в., двигатель OM642. В процессе
+                                            диагностики были выявлены следующие неисправности: Повышенный радиальный
+                                            люфт ротора ТКР, затруднённый ход привода механизма изменяемой геометрии,
+                                            износ зубчатой передачи электронного актуатора, повышен "ампераж"
+                                            электромотора актуатора. После снятия корпусов турбокомпрессора обнаружены
+                                            повреждения турбинного колеса в результате попадания посторонних
+                                            частиц/предметов по разгонной части лопастей, а также повреждения лопаток
+                                            механизма РСА (регулируемый сопловой аппарат). Впоследствии подтвердилось
+                                            предположение о том, что "посыпались" выпускные коллектора, частицы которых
+                                            попали в турбину и вызвали соответствующие повреждения. После разбора
+                                            картриджа обнаружен абразивный износ подшипника скольжения, шеек вала
+                                            ротора. Биение вала превышало допустимые нормы. Для восстановления
+                                            турбокомпрессора требовалась замена ремкомплекта, ротора с колесом турбины,
+                                            механизма РСА, ремонт или замена механической части актуатора. В целях
+                                            сокращения сроков производства работ клиент принял решение приобрести у нас
+                                            готовый восстановленный оригинальный турбокомпрессор GARRETT, в обмен на
+                                            неисправный. Также клиенту были даны рекомендации для устранения
+                                            неисправностей автомобиля, повлекших выход из строя турбокомпрессора.
+
+                                            Поступил в работу турбокомпрессор от БМВ 328 Ф30 2012 г., пробег около
+                                            140000 км., мотор N20B20, турбокомпрессор Mitsubishi с вакуумным актуатором.
+                                            Клиент из Ростовской обл., отправил турбину транспортной компанией. Были
+                                            жалобы на посторонние звуки (дребезжащий металлический звук), особенно на
+                                            непрогретом моторе, ограничение мощности двигателя, "провалы" при разгоне,
+                                            на панели приборов отображалось предупреждение "ошибка привода". При
+                                            первичной диагностике обнаружено: повышенный осевой люфт ротора ТКР,
+                                            повышенный люфт и подклинивание в приводе клапана "Вестгейт", лопасти
+                                            компрессорного колеса "отпескоструены", имеют закруглённую форму. После
+                                            разбора картриджа констатировали значительный износ упорного подшипника,
+                                            износ посадочных мест вала под стопорными кольцами, повреждения мембраны
+                                            байпасного клапана. По турбокомпрессору произведены следующие работы: замена
+                                            картриджа в сборе, замена втулки оси привода клапана Вестгейт (перевтул),
+                                            замена байпасного клапана. Срок ремонта составил 1 рабочий день после
+                                            согласования с клиентом. Отправили отремонтированный турбокомпрессор той же
+                                            ТК.
+
+                                            Соответствующие рекомендации по установке турбокомпрессора и обслуживанию
+                                            автомобиля даны в письменном виде. Предоставлена гарантия на выполненные
+                                            работы сроком 12 месяцев.
+
+                                            К нам в техцентр обратился клиент с автомобилем WV TOUAREG 2009 года выпуска
+                                            с пробегом 285000 км. c двигателем CASA. Жалобы клиента были на потерю тяги,
+                                            черный дым, течь масла. Произведя углубленную диагностику автомобиля были
+                                            выявлены следующие замечания:
+
+                                            Сильный износ колеса компрессора ТКР.
+                                            Износ механической части актуатора.
+                                            Подклинивание геометрии ТКР.
+                                            Повышенное противодавление выхлопной системы.
+                                            Течь теплообменника в развале блока ДВС.
+                                            Отклонения по коррекциям топливных форсунок за пределами допустимых
+                                            значений.
+
+                                            Клиенту был предоставлен перечень необходимых работ, список запчастей и
+                                            сроки ремонта. Далее заказчик принял решение выполнить весь перечень
+                                            рекомендаций, чтобы привести автомобиль в идеальное состояние. Нами был
+                                            произведен полный ремонт ТКР с заменой картриджа и актуатора на оригинальный
+                                            Hella. Удаление сажевого фильтра с программным отключением под нормы
+                                            Евро2.Переуплотнили теплообменник в развале блока ДВС а так же были
+                                            восстановлены топливные форсунки. Произведено полное ТО с заменой масла во
+                                            всех агрегатах. После контрольных проверок и тестов автомобиль был выдан
+                                            клиенту, который в дальнейшем стал нашим постоянным клиентом и приезжает на
+                                            плановое ТО каждые 7500 км.
+                                        </p>
+                                    </div>
+                                    <button class="example__button">Читать дальше</button>
+                                </div>
+                                <div class="example__price">Стоимость: <span>29 540 ₽</span></div>
+                            </div>
+                        </div>
+                        <div class="example__item">
+                            <div class="example__image">
+                                <picture>
+                                    <source srcset="./src/assets/images/example1_700px.png" media="(max-width: 700px)">
+                                    <source srcset="./src/assets/images/example1.png">
+                                    <img srcset="./src/assets/images/example1.png" alt="My default image">
+                                </picture>
+                            </div>
+                            <div class="example__info">
+                                <div class="example__breakdown">
+                                    <div class="example__breakdown-title">В техцентр ТУРБОРУ обратился клиент с жалобой
+                                        на
+                                        повышенный расход</div>
+                                    <div class="example__breakdown-text">
+                                        <p>
+                                            В техцентр ТУРБОРУ обратился клиент с жалобой на повышенный расход масла
+                                            ДВС. Автомобиль Шкода Октавия, 2012 г. в., бензиновый мотор 1.8 л., пробег
+                                            170000 км. В ходе диагностики было выявлено: повышенный осевой люфт ротора
+                                            ТКР, масло в напорных патрубках, повышенное противодавление в системе
+                                            выпуска ОГ, что свидетельствует о снижении пропускной способности
+                                            каталитического нейтрализатора ОГ. Было принято решение снять
+                                            турбокомпрессор для дальнейшей диагностики. Турбокомпрессор демонтирован.
+                                            После разбора и дефектовки ТКР обнаружен износ упорного подшипника ТКР.
+                                            Заменили ремкомплект турбины, произвели балансировку и проверку картриджа на
+                                            стенде. Промыли патрубки системы впуска. Удалили забитый катализатор,
+                                            прошили ЭБУ под нормы ЕВРО-2. В результате выполненных работ расход масла
+                                            снизился до минимальных значений.
+
+                                            От постоянного клиента (техцентр) в работу поступил турбокомпрессор GARRETT
+                                            GTA2056VK от Мерседес МЛ320, 2008 г.в., двигатель OM642. В процессе
+                                            диагностики были выявлены следующие неисправности: Повышенный радиальный
+                                            люфт ротора ТКР, затруднённый ход привода механизма изменяемой геометрии,
+                                            износ зубчатой передачи электронного актуатора, повышен "ампераж"
+                                            электромотора актуатора. После снятия корпусов турбокомпрессора обнаружены
+                                            повреждения турбинного колеса в результате попадания посторонних
+                                            частиц/предметов по разгонной части лопастей, а также повреждения лопаток
+                                            механизма РСА (регулируемый сопловой аппарат). Впоследствии подтвердилось
+                                            предположение о том, что "посыпались" выпускные коллектора, частицы которых
+                                            попали в турбину и вызвали соответствующие повреждения. После разбора
+                                            картриджа обнаружен абразивный износ подшипника скольжения, шеек вала
+                                            ротора. Биение вала превышало допустимые нормы. Для восстановления
+                                            турбокомпрессора требовалась замена ремкомплекта, ротора с колесом турбины,
+                                            механизма РСА, ремонт или замена механической части актуатора. В целях
+                                            сокращения сроков производства работ клиент принял решение приобрести у нас
+                                            готовый восстановленный оригинальный турбокомпрессор GARRETT, в обмен на
+                                            неисправный. Также клиенту были даны рекомендации для устранения
+                                            неисправностей автомобиля, повлекших выход из строя турбокомпрессора.
+
+                                            Поступил в работу турбокомпрессор от БМВ 328 Ф30 2012 г., пробег около
+                                            140000 км., мотор N20B20, турбокомпрессор Mitsubishi с вакуумным актуатором.
+                                            Клиент из Ростовской обл., отправил турбину транспортной компанией. Были
+                                            жалобы на посторонние звуки (дребезжащий металлический звук), особенно на
+                                            непрогретом моторе, ограничение мощности двигателя, "провалы" при разгоне,
+                                            на панели приборов отображалось предупреждение "ошибка привода". При
+                                            первичной диагностике обнаружено: повышенный осевой люфт ротора ТКР,
+                                            повышенный люфт и подклинивание в приводе клапана "Вестгейт", лопасти
+                                            компрессорного колеса "отпескоструены", имеют закруглённую форму. После
+                                            разбора картриджа констатировали значительный износ упорного подшипника,
+                                            износ посадочных мест вала под стопорными кольцами, повреждения мембраны
+                                            байпасного клапана. По турбокомпрессору произведены следующие работы: замена
+                                            картриджа в сборе, замена втулки оси привода клапана Вестгейт (перевтул),
+                                            замена байпасного клапана. Срок ремонта составил 1 рабочий день после
+                                            согласования с клиентом. Отправили отремонтированный турбокомпрессор той же
+                                            ТК.
+
+                                            Соответствующие рекомендации по установке турбокомпрессора и обслуживанию
+                                            автомобиля даны в письменном виде. Предоставлена гарантия на выполненные
+                                            работы сроком 12 месяцев.
+
+                                            К нам в техцентр обратился клиент с автомобилем WV TOUAREG 2009 года выпуска
+                                            с пробегом 285000 км. c двигателем CASA. Жалобы клиента были на потерю тяги,
+                                            черный дым, течь масла. Произведя углубленную диагностику автомобиля были
+                                            выявлены следующие замечания:
+
+                                            Сильный износ колеса компрессора ТКР.
+                                            Износ механической части актуатора.
+                                            Подклинивание геометрии ТКР.
+                                            Повышенное противодавление выхлопной системы.
+                                            Течь теплообменника в развале блока ДВС.
+                                            Отклонения по коррекциям топливных форсунок за пределами допустимых
+                                            значений.
+
+                                            Клиенту был предоставлен перечень необходимых работ, список запчастей и
+                                            сроки ремонта. Далее заказчик принял решение выполнить весь перечень
+                                            рекомендаций, чтобы привести автомобиль в идеальное состояние. Нами был
+                                            произведен полный ремонт ТКР с заменой картриджа и актуатора на оригинальный
+                                            Hella. Удаление сажевого фильтра с программным отключением под нормы
+                                            Евро2.Переуплотнили теплообменник в развале блока ДВС а так же были
+                                            восстановлены топливные форсунки. Произведено полное ТО с заменой масла во
+                                            всех агрегатах. После контрольных проверок и тестов автомобиль был выдан
+                                            клиенту, который в дальнейшем стал нашим постоянным клиентом и приезжает на
+                                            плановое ТО каждые 7500 км.
+                                        </p>
+                                    </div>
+                                    <button class="example__button">Читать дальше</button>
+                                </div>
+                                <div class="example__price">Стоимость: <span>29 540 ₽</span></div>
+                            </div>
+                        </div>
+                        <div class="example__item">
+                            <div class="example__image">
+                                <picture>
+                                    <source srcset="./src/assets/images/example1_700px.png" media="(max-width: 700px)">
+                                    <source srcset="./src/assets/images/example1.png">
+                                    <img srcset="./src/assets/images/example1.png" alt="My default image">
+                                </picture>
+                            </div>
+                            <div class="example__info">
+                                <div class="example__breakdown">
+                                    <div class="example__breakdown-title">Проверка другого текста</div>
+                                    <div class="example__breakdown-text">
+                                        <p>
+                                            Всё должно быть заменено, как в заголовке так и тута.
+
+                                            От постоянного клиента (техцентр) в работу поступил турбокомпрессор GARRETT
+                                            GTA2056VK от Мерседес МЛ320, 2008 г.в., двигатель OM642. В процессе
+                                            диагностики были выявлены следующие неисправности: Повышенный радиальный
+                                            люфт ротора ТКР, затруднённый ход привода механизма изменяемой геометрии,
+                                            износ зубчатой передачи электронного актуатора, повышен "ампераж"
+                                            электромотора актуатора. После снятия корпусов турбокомпрессора обнаружены
+                                            повреждения турбинного колеса в результате попадания посторонних
+                                            частиц/предметов по разгонной части лопастей, а также повреждения лопаток
+                                            механизма РСА (регулируемый сопловой аппарат). Впоследствии подтвердилось
+                                            предположение о том, что "посыпались" выпускные коллектора, частицы которых
+                                            попали в турбину и вызвали соответствующие повреждения. После разбора
+                                            картриджа обнаружен абразивный износ подшипника скольжения, шеек вала
+                                            ротора. Биение вала превышало допустимые нормы. Для восстановления
+                                            турбокомпрессора требовалась замена ремкомплекта, ротора с колесом турбины,
+                                            механизма РСА, ремонт или замена механической части актуатора. В целях
+                                            сокращения сроков производства работ клиент принял решение приобрести у нас
+                                            готовый восстановленный оригинальный турбокомпрессор GARRETT, в обмен на
+                                            неисправный. Также клиенту были даны рекомендации для устранения
+                                            неисправностей автомобиля, повлекших выход из строя турбокомпрессора.
+
+                                            Поступил в работу турбокомпрессор от БМВ 328 Ф30 2012 г., пробег около
+                                            140000 км., мотор N20B20, турбокомпрессор Mitsubishi с вакуумным актуатором.
+                                            Клиент из Ростовской обл., отправил турбину транспортной компанией. Были
+                                            жалобы на посторонние звуки (дребезжащий металлический звук), особенно на
+                                            непрогретом моторе, ограничение мощности двигателя, "провалы" при разгоне,
+                                            на панели приборов отображалось предупреждение "ошибка привода". При
+                                            первичной диагностике обнаружено: повышенный осевой люфт ротора ТКР,
+                                            повышенный люфт и подклинивание в приводе клапана "Вестгейт", лопасти
+                                            компрессорного колеса "отпескоструены", имеют закруглённую форму. После
+                                            разбора картриджа констатировали значительный износ упорного подшипника,
+                                            износ посадочных мест вала под стопорными кольцами, повреждения мембраны
+                                            байпасного клапана. По турбокомпрессору произведены следующие работы: замена
+                                            картриджа в сборе, замена втулки оси привода клапана Вестгейт (перевтул),
+                                            замена байпасного клапана. Срок ремонта составил 1 рабочий день после
+                                            согласования с клиентом. Отправили отремонтированный турбокомпрессор той же
+                                            ТК.
+
+                                            Соответствующие рекомендации по установке турбокомпрессора и обслуживанию
+                                            автомобиля даны в письменном виде. Предоставлена гарантия на выполненные
+                                            работы сроком 12 месяцев.
+
+                                            К нам в техцентр обратился клиент с автомобилем WV TOUAREG 2009 года выпуска
+                                            с пробегом 285000 км. c двигателем CASA. Жалобы клиента были на потерю тяги,
+                                            черный дым, течь масла. Произведя углубленную диагностику автомобиля были
+                                            выявлены следующие замечания:
+
+                                            Сильный износ колеса компрессора ТКР.
+                                            Износ механической части актуатора.
+                                            Подклинивание геометрии ТКР.
+                                            Повышенное противодавление выхлопной системы.
+                                            Течь теплообменника в развале блока ДВС.
+                                            Отклонения по коррекциям топливных форсунок за пределами допустимых
+                                            значений.
+
+                                            Клиенту был предоставлен перечень необходимых работ, список запчастей и
+                                            сроки ремонта. Далее заказчик принял решение выполнить весь перечень
+                                            рекомендаций, чтобы привести автомобиль в идеальное состояние. Нами был
+                                            произведен полный ремонт ТКР с заменой картриджа и актуатора на оригинальный
+                                            Hella. Удаление сажевого фильтра с программным отключением под нормы
+                                            Евро2.Переуплотнили теплообменник в развале блока ДВС а так же были
+                                            восстановлены топливные форсунки. Произведено полное ТО с заменой масла во
+                                            всех агрегатах. После контрольных проверок и тестов автомобиль был выдан
+                                            клиенту, который в дальнейшем стал нашим постоянным клиентом и приезжает на
+                                            плановое ТО каждые 7500 км.
+                                        </p>
+                                    </div>
+                                    <button class="example__button">Читать дальше</button>
+                                </div>
+                                <div class="example__price">Стоимость: <span>29 540 ₽</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example__dots-wrapper">
+                        <div class="example__dots"></div>
+                        <div class="example__price">Стоимость:<span></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="simple-text">
+            <div class="container">
+                <div class="simple-text__content">
+                    <h2 class="simple-text__title">Купить турбину в Москве</h2>
+                    <p class="simple-text__text">
+                        Компания Turboru предлагает своим клиентам купить турбину в Москве, которая
+                        отличается высоким качеством и доступной ценой. В каталоге нашего магазина
+                        представлено огромное количество турбокомпрессоров, благодаря чему каждый человек
+                        сможет подобрать то, что максимальным образом соответствует его запросам.
+                        Купить турбину можно как для легковых автомобилей, так и для грузовых транспортных средств.
+                    </p>
+                    <br>
+                    <p class="simple-text__text">
+                        Основным видом деятельности компании Turboru является розничная и оптовая
+                        реализация турбин. Штат опытных специалистов обладает высоким уровнем технологической
+                        подготовки, поэтому мы можем ответить на все вопросы и помочь с выбором турбин.
+                        Надежная и отлаженная логистическая система дает возможность обеспечить доставку
+                        заказа в сжатые сроки. Среди основных преимуществ нашей фирмы можно выделить:
+                    </p>
+                    <ul class="simple-text__points">
+                        <li>
+                            <div class="simple-text__point"></div>Огромный выбор оригинальных турбин высокого качества;
+                        </li>
+                        <li>
+                            <div class="simple-text__point"></div>Гибкая ценовая политика;
+                        </li>
+                        <li>
+                            <div class="simple-text__point"></div>Быстрая и своевременная доставка;
+                        </li>
+                        <li>
+                            <div class="simple-text__point"></div>Предоставление гарантии на все турбокомпрессоры;
+                        </li>
+                        <li>
+                            <div class="simple-text__point"></div>Высокий сервис и индивидуальный подход к каждому
+                            клиенту.
+                        </li>
+                    </ul>
+                    <div class="simple-text__background">
+                        <p class="simple-text__text">
+                            Продажа турбин осуществляется таким образом, чтобы каждый человек был
+                            доволен своей покупкой. Продукция отличается высоким качеством. Купить турбину в Москве в
+                            компании
+                            Turboru – значит получить надежную и качественную продукцию с гарантией.
+                        </p>
+                    </div>
+                    <div class="advantages">
+                        <h3 class="advantages__title">
+                            Турбокомпрессор, купить который можно в нашей компании в Москве,
+                            идеально подойдет для Вашего транспортного средства. (переместить предложение после списка)
+                            В ассортименте всегда имеются:
+                        </h3>
+                        <div class="advantages__list">
+                            <div class="advantages__item">
+                                <div class="advantages__image">
+                                    <img src="./src/assets/images/completeIcon.png" alt="complete">
+                                </div>
+                                <div class="advantages__text">Турбины для легковых автомобилей популярных марок - Audi,
+                                    Volkswagen, BMW, SAAB;</div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__image">
+                                    <img src="./src/assets/images/completeIcon.png" alt="complete">
+                                </div>
+                                <div class="advantages__text">Турбины для грузовых транспортных средств - Man, Volvo и
+                                    др.;</div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__image">
+                                    <img src="./src/assets/images/completeIcon.png" alt="complete">
+                                </div>
+                                <div class="advantages__text">Турбины для специализированной техники.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pament">
+            <div class="container">
+                <div class="payment__content">
+                    <h2 class="payment__title">Оплата</h2>
+                    <div class="payment__background">
+                        <p class="payment__subtitle">Онлайн-оплата банковскими картами Visa/MasterCard/Мир</p>
+                    </div>
+                    <div class="payment__methods">
+                        <div class="payment__method">
+                            <div class="payment__image">
+                                <img src="./src/assets/images/payment1.svg" alt="payment">
+                            </div>
+                            <div class="payment__method-text">При доставке товара курьерской службой оплата по QR - коду
+                            </div>
+                        </div>
+                        <div class="payment__method">
+                            <div class="payment__image">
+                                <img src="./src/assets/images/payment2.svg" alt="payment">
+                            </div>
+                            <div class="payment__method-text">В кассе автосервиса компании Turboru</div>
+                        </div>
+                        <div class="payment__method">
+                            <div class="payment__image">
+                                <img src="./src/assets/images/payment3.svg" alt="payment">
+                            </div>
+                            <div class="payment__method-text">Выдача кассового чека</div>
+                        </div>
+                    </div>
+                    <div class="payment__attention"><strong>Внимание!</strong> Карты некоторых банков не работают через
+                        Apple Pay, Google Pay, Samsung Pay.</div>
+                    <div class="payment__heading-wrapper">
+                        <h3 class="payment__heading">Оплата частями</h3>
+                        <p class="payment__text">
+                            После согласования работ вноситься предоплата от 30% от общей стоимости
+                            заказ-наряда, остаток вноситься после подписания акта приема-передачи.
+                        </p>
+                    </div>
+                    <h3 class="payment__heading">Наличный расчёт</h3>
+                    <ul class="payment__points">
+                        <li>
+                            <div class="payment__point"></div>Огромный выбор оригинальных турбин высокого качества;
+                        </li>
+                        <li>
+                            <div class="payment__point"></div>Гибкая ценовая политика;
+                        </li>
+                        <li>
+                            <div class="payment__point"></div>Быстрая и своевременная доставка;
+                        </li>
+                        <li>
+                            <div class="payment__point"></div>Предоставление гарантии на все турбокомпрессоры;
+                        </li>
+                        <li>
+                            <div class="payment__point"></div>Высокий сервис и индивидуальный подход к каждому клиенту.
+                        </li>
+                    </ul>
+                    <div class="payment__heading-wrapper">
+                        <h3 class="payment__heading">Безналичный расчет для юридических лиц </h3>
+                        <p class="payment__text">
+                            Если покупка совершается от юридического лица, оплата
+                            производится по счету, который выставляет сотрудник компании Turboru
+                        </p>
+                    </div>
+                    <div class="payment__attention"><strong>Важно!</strong> Срок оплаты счета действителен 3 дня.</div>
+                    <div class="advantages">
+                        <div class="advantages__list">
+                            <div class="advantages__item">
+                                <div class="advantages__image">
+                                    <img src="./src/assets/images/completeIcon.png" alt="complete">
+                                </div>
+                                <div class="advantages__text">
+                                    Товар отгружается в течение суток после поступления
+                                    денежных средств на счет компании Turboru.
+                                </div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__image">
+                                    <img src="./src/assets/images/completeIcon.png" alt="complete">
+                                </div>
+                                <div class="advantages__text">
+                                    Услуги по ремонту транспортного средства начинаются в течение суток
+                                    после поступления денежных средств на счет компании Turboru.
+                                </div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__image">
+                                    <img src="./src/assets/images/completeIcon.png" alt="complete">
+                                </div>
+                                <div class="advantages__text">
+                                    При отгрузке автозапчастей в регионы сроки доставки включают
+                                    время доставки до транспортной компании ( до 2-х суток) .
+                                    Далее сроки доставки зависят от условий ТК.</div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__image">
+                                    <img src="./src/assets/images/completeIcon.png" alt="complete">
+                                </div>
+                                <div class="advantages__text">
+                                    Выдаем пакет закрывающих документов для бухгалтерии
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__content">
+                    <div class="contacts__title">Контакты</div>
+                    <div class="contacts__list">
+                        <div class="contacts__item item1">
+                            <div class="contacts__image">
+                                <img src="./src/assets/images/contacts1.svg" alt="Contacts">
+                            </div>
+                            <div class="contacts__text-wrapper">
+                                <div class="contacts__heading">Как нас найти</div>
+                                <div class="contacts__text">г. Москва, Хлебозаводский проезд, 7Аи</div>
+                            </div>
+                        </div>
+                        <div class="contacts__item item2">
+                            <div class="contacts__image">
+                                <img src="./src/assets/images/contacts2.svg" alt="Contacts">
+                            </div>
+                            <div class="contacts__text-wrapper">
+                                <div class="contacts__heading">Написать нам</div>
+                                <div class="contacts__text">sales@turboru.ru</div>
+                            </div>
+                        </div>
+                        <div class="contacts__item item3">
+                            <div class="contacts__image">
+                                <img src="./src/assets/images/contacts3.svg" alt="Contacts">
+                            </div>
+                            <div class="contacts__text-wrapper">
+                                <div class="contacts__heading">Наш телефон</div>
+                                <div class="contacts__text">+7 (499) 703-30-66</div>
+                                <div class="contacts__text">+7 (925) 388-33-30</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__map">
+                        <a href="#">
+                            <picture>
+                                <source srcset="./src/assets/images/map_380px.png" media="(max-width: 380px)">
+                                <source srcset="./src/assets/images/map_576px.png" media="(max-width: 576px)">
+                                <source srcset="./src/assets/images/map_768px.png" media="(max-width: 768px)">
+                                <source srcset="./src/assets/images/map.png">
+                                <img src="./src/assets/images/map.png" alt="Map">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="contacts__title">Остались вопросы?</div>
+                    <form class="contacts__form">
+                        <div class="contacts__inputs">
+                            <input class="contacts__input" type="text" name="name" id="contactsName"
+                                placeholder="Ваше Имя">
+                            <input class="contacts__input" type="text" name="phone" id="contactsPhone"
+                                placeholder="Ваш телефон">
+                            <input class="contacts__input" type="text" name="mail" id="contactsMail"
+                                placeholder="Ваша почта">
+                        </div>
+                        <input class="contacts__button" type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="work-stages">
+            <div class="container">
+                <div class="work-stages__content">
+                    <h2 class="work-stages__title">Этапы работы</h2>
+                    <div class="work-stages__repair-turbine repair">
+                        <h3 class="repair__title">Ремонт турбины если турбина на машине</h3>
+                        <div class="repair__stages">
+                            <div class="repair__item">
+                                <div class="repair__item-count">1</div>
+                                <div class="repair__item-img">
+                                    <img src="/src/assets/images/worksStage_1.svg" alt="Stage">
+                                </div>
+                                <div class="repair__item-info">
+                                    <div class="repair__item-title">Техническая мойка автомобиля</div>
+                                    <div class="repair__item-text">Очещаем автомобиль от поверхностных загрязнений
+                                        (кузова и, в
+                                        большей степени, подвески) перед заездом в сервис.</div>
+                                </div>
+                            </div>
+                            <div class="repair__item">
+                                <div class="repair__item-count">2</div>
+                                <div class="repair__item-img">
+                                    <img src="/src/assets/images/worksStage_2.svg" alt="Stage">
+                                </div>
+                                <div class="repair__item-info">
+                                    <div class="repair__item-title">Диагностика автомобиля</div>
+                                    <div class="repair__item-text">Проводим механический и копьютерную диагностику
+                                        турбины без
+                                        снятие с авто.</div>
+                                </div>
+                            </div>
+                            <div class="repair__item">
+                                <div class="repair__item-count">3</div>
+                                <div class="repair__item-img">
+                                    <img src="/src/assets/images/worksStage_3.svg" alt="Stage">
+                                </div>
+                                <div class="repair__item-info">
+                                    <div class="repair__item-title">Выявления причины поломки турбины</div>
+                                    <div class="repair__item-text">После диагности мы озвучиваем причему поломки и
+                                        стоимость
+                                        ремонта турбины.</div>
+                                </div>
+                            </div>
+                            <div class="repair__item">
+                                <div class="repair__item-count">4</div>
+                                <div class="repair__item-img">
+                                    <img src="/src/assets/images/worksStage_4.svg" alt="Stage">
+                                </div>
+                                <div class="repair__item-info">
+                                    <div class="repair__item-title">Согласование работ</div>
+                                    <div class="repair__item-text">Состовляется стоимость и сроки работы по ремонту
+                                        турбины,
+                                        согласовывается с клиентов.</div>
+                                </div>
+                            </div>
+                            <div class="repair__item">
+                                <div class="repair__item-count">5</div>
+                                <div class="repair__item-img">
+                                    <img src="/src/assets/images/worksStage_5.svg" alt="Stage">
+                                </div>
+                                <div class="repair__item-info">
+                                    <div class="repair__item-title">Ремонт турбины</div>
+                                    <div class="repair__item-text">Производиться ремонтные работы согласнно
+                                        заказ-наряду.</div>
+                                </div>
+                            </div>
+                            <div class="repair__item">
+                                <div class="repair__item-count">6</div>
+                                <div class="repair__item-img">
+                                    <img src="/src/assets/images/worksStage_6.svg" alt="Stage">
+                                </div>
+                                <div class="repair__item-info">
+                                    <div class="repair__item-title">Выдача автомобиля</div>
+                                    <div class="repair__item-text">Клиент заберает свою машину.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-stages__repair-without-turbine repair">
+                        <h3 class="repair__title">Ремонт турбины если турбина не на машине</h3>
+                        <div class="repair__stages">
+                            <div class="repair__item">
+                                <div class="repair__item-count">1</div>
+                                <div class="repair__item-img">
+                                    <img src="/src/assets/images/worksStage_Wturbine_1.svg" alt="Stage">
+                                </div>
+                                <div class="repair__item-info">
+                                    <div class="repair__item-title">Диагностика турбины</div>
+                                    <ul class="repair__item-list">
+                                        <p class="repair__item-list-element">Разбор турбины и дефектовка (выявление
+                                            поврежденных/изношенных деталей турбокомпрессора)</p>
+                                        <p class="repair__item-list-element">Озвучивание причин поломки турбины</p>
+                                        <p class="repair__item-list-element">Рекомендации по устранению неисправности
+                                            автомобиля
+                                        </p>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="repair__item">
+                                <div class="repair__item-count">2</div>
+                                <div class="repair__item-img">
+                                    <img src="/src/assets/images/worksStage_Wturbine_2.svg" alt="Stage">
+                                </div>
+                                <div class="repair__item-info">
+                                    <div class="repair__item-title">Cогласование работ</div>
+                                    <div class="repair__item-text">Согласовываются стоимость и сроки работы по ремонту
+                                        турбины с
+                                        клиентов.</div>
+                                </div>
+                            </div>
+                            <div class="repair__item">
+                                <div class="repair__item-count">3</div>
+                                <div class="repair__item-img">
+                                    <img src="/src/assets/images/worksStage_Wturbine_3.svg" alt="Stage">
+                                </div>
+                                <div class="repair__item-info">
+                                    <div class="repair__item-title">Cогласование работ</div>
+                                    <div class="repair__item-text">Производиться ремонтные работы согласнно
+                                        заказ-наряду.</div>
+                                </div>
+                            </div>
+                            <div class="repair__item">
+                                <div class="repair__item-count">4</div>
+                                <div class="repair__item-img">
+                                    <img src="/src/assets/images/worksStage_Wturbine_4.svg" alt="Stage">
+                                </div>
+                                <div class="repair__item-info">
+                                    <div class="repair__item-title">Cогласование работ</div>
+                                    <div class="repair__item-text">Клиент заберает свою турбину</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script defer src="./src/scripts/components/popup.js"></script>
+    <script defer src="./src/scripts/components/exampleSlider.js"></script>
+    <script defer src="./src/scripts/components/search.js"></script>
+    <script defer src="./src/scripts/components/header.js"></script>
+</body>
+
+</html>
