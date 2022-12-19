@@ -164,6 +164,10 @@
   }
 }
 
+.example__button:hover {
+  background: #008DB1;
+}
+
 .example__price {
   width: -webkit-fit-content;
   width: -moz-fit-content;

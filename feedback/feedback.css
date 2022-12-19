@@ -323,6 +323,10 @@
   }
 }
 
+.feedback__button:hover {
+  background: #FFB800;
+}
+
 .feedback__image-block {
   width: 430px;
   background: #eeeeee;
