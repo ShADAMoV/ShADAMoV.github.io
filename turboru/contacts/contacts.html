@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TITLE</title>
+    <link href="../main.css" rel="stylesheet">
+    <link href="contacts.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="main">
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__content">
+                    <div class="contacts__title">Контакты</div>
+                    <div class="contacts__list">
+                        <div class="contacts__item item1">
+                            <div class="contacts__image">
+                                <img src="../images/contacts1.svg" alt="Contacts">
+                            </div>
+                            <div class="contacts__text-wrapper">
+                                <div class="contacts__heading">Как нас найти</div>
+                                <div class="contacts__text">г. Москва, Хлебозаводский проезд, 7Аи</div>
+                            </div>
+                        </div>
+                        <div class="contacts__item item2">
+                            <div class="contacts__image">
+                                <img src="../images/contacts2.svg" alt="Contacts">
+                            </div>
+                            <div class="contacts__text-wrapper">
+                                <div class="contacts__heading">Написать нам</div>
+                                <div class="contacts__text">sales@turboru.ru</div>
+                            </div>
+                        </div>
+                        <div class="contacts__item item3">
+                            <div class="contacts__image">
+                                <img src="../images/contacts3.svg" alt="Contacts">
+                            </div>
+                            <div class="contacts__text-wrapper">
+                                <div class="contacts__heading">Наш телефон</div>
+                                <div class="contacts__text">+7 (499) 703-30-66</div>
+                                <div class="contacts__text">+7 (925) 388-33-30</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__map">
+                        <a href="#">
+                            <picture>
+                                <source srcset="../images/map_380px.png " media="(max-width: 380px)">
+                                <source srcset="../images/map_576px.png " media="(max-width: 576px)">
+                                <source srcset="../images/map_768px.png " media="(max-width: 768px)">
+                                <source srcset="../images/map.png ">
+                                <img src="../images/map.png" alt="Map">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="contacts__title">Остались вопросы?</div>
+                    <form class="contacts__form">
+                        <div class="contacts__inputs">
+                            <input class="contacts__input" type="text" name="name" id="contactsName"
+                                placeholder="Ваше Имя">
+                            <input class="contacts__input" type="text" name="phone" id="contactsPhone"
+                                placeholder="Ваш телефон">
+                            <input class="contacts__input" type="text" name="mail" id="contactsMail"
+                                placeholder="Ваша почта">
+                        </div>
+                        <input class="contacts__button" type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
