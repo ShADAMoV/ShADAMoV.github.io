@@ -1,0 +1,64 @@
+.header-mobile {
+    display: none;
+    position: fixed;
+    width: 100%;
+
+    @media (max-width: 980px) {
+        display: block;
+        background: #000;
+
+        &__content {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__title {
+            color: #fff;
+            font-size: 20px;
+            line-height: 1.35;
+            font-family: "Circe Rounded Bold";
+        }
+
+        &__burger {
+            width: 28px;
+            height: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        &__burger-line {
+            height: 3px;
+            background-color: #fff;
+            width: 100%;
+            transition: all 1s;
+        }
+
+        &_active {
+            .header-mobile__burger-line:nth-child(1) {
+                position: absolute;
+                transform: rotate(45deg);
+                top: 9px;
+            }
+
+            .header-mobile__burger-line:nth-child(2) {
+                position: absolute;
+                top: 9px;
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+            }
+
+            .header-mobile__burger-line:nth-child(3) {
+                position: absolute;
+                transform: rotate(-45deg);
+                top: 9px;
+            }
+        }
+    }
+
+
+}

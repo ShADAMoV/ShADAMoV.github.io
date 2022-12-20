@@ -1,0 +1,27 @@
+.header {    
+    @media (max-width: 980px) {
+        display: none;
+    }
+
+    &__content {
+        padding: 5px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-left,
+    .nav-right {
+        display: flex;
+        column-gap: 30px;
+    }
+
+    &__logo {
+        max-width: 220px;
+        min-width: 220px;
+    }
+
+    .nav-link_active {
+        color: #34558b;
+    }
+}
