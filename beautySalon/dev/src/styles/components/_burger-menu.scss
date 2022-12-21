@@ -1,8 +1,10 @@
+@use '../variables' as v;
+
 .burger-menu {
     position: fixed;
     width: 100vw;
     display: flex;
-    background-color: #fff;
+    background-color: v.$white;
     align-items: center;
     flex-direction: column;
     padding-top: 60px;
@@ -10,6 +12,7 @@
     visibility: hidden;
     opacity: 0;
     transition: all 1s;
+    z-index: 10;
 
     &_active {
         visibility: visible;

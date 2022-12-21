@@ -1,11 +1,45 @@
+@use 'variables' as v;
+
 .nav-link {
-    color: #000000;
+    color: v.$black;
     font-size: 16px;
     white-space: nowrap;
     text-transform: uppercase;
-    font-family: "Circe Rounded Bold";
+    font-weight: 700;
 }
 
 .nav-link_active {
-    color: #34558b;
+    color: v.$dark-blue;
+}
+
+.header-mobile__title {
+    color: v.$white;
+    font-size: 20px;
+    line-height: 1.35;
+    font-weight: 700;
+}
+
+.nav-link_active {
+    color: v.$dark-blue;
+}
+
+.banner__title {
+    font-size: 34px;
+    letter-spacing: 2.5px;
+    color: v.$black;
+
+    @media (max-width: 900px) {
+        font-size: 16px;
+    }
+}
+
+.banner__subtitle {
+    font-weight: 700;
+    font-size: 28px;
+    color: v.$dark-blue;
+}
+
+.banner__text {
+    font-size: 24px;
+    color: v.$black;
 }

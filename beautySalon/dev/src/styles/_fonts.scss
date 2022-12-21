@@ -1,10 +1,12 @@
 @font-face {
 	font-family: 'Circe Rounded'; 
-	src: url(src/assets/fonts/CirceRounded.ttf); 
+	src: url(src/assets/fonts/CirceRounded.ttf);
+	font-weight: 400; 
 }
 
 @font-face {
-	font-family: 'Circe Rounded Bold'; 
+	font-family: 'Circe Rounded'; 
 	src: url(src/assets/fonts/CirceRoundedBold.ttf); 
+	font-weight: 700;
 }
 
