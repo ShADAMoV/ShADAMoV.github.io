@@ -43,3 +43,23 @@
     font-size: 24px;
     color: v.$black;
 }
+
+.slider__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: v.$dark-blue;
+}
+
+.slider__text {
+    font-size: 18px;
+    line-height: 1.35;
+    font-weight: 700;
+    color: v.$dark-blue;
+}
+
+.slider__button {
+    color: v.$white;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 700;
+}
