@@ -57,9 +57,21 @@
     color: v.$dark-blue;
 }
 
-.slider__button {
-    color: v.$white;
-    font-size: 14px;
-    line-height: 1;
+.result__title {
     font-weight: 700;
+    color: v.$dark-blue;
+    line-height: 1.23;
+    font-size: 36px;
+}
+
+.result__subtitle {
+    font-size: 26px;
+    line-height: 1.5;
+    color: v.$black;
+}
+
+.result__text {
+    font-size: 22px;
+    line-height: 1.55;
+    color: v.$black;
 }

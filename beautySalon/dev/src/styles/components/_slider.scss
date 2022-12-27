@@ -5,7 +5,6 @@
     margin-bottom: 60px;
 
     &__content {
-        padding: 0 20px;
         position: relative;
     }
 
@@ -62,14 +61,8 @@
 
     &__button {
         position: absolute;
-        padding: 20px 40px;
-        background: v.$red;
-        border-radius: 5px;
-        width: fit-content;
-        text-transform: uppercase;
         bottom: 20px;
         right: 60px;
-        cursor: pointer;
 
         @media (max-width: 640px) {
             right: 39%;
