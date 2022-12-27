@@ -91,4 +91,13 @@ a {
 [class*="container"] {
     max-width: 1200px;
     margin: 0 auto;
+
+    @media (max-width: 1200px) {
+        max-width: 980px;
+    }
+
+    @media (max-width: 960px) {
+        max-width: 600px;
+    }
 }
+

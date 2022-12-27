@@ -6,5 +6,19 @@ $(document).ready(function () {
         infinite: true,
         prevArrow: $('.slider__prev'),
         nextArrow: $('.slider__next'),
+        responsive: [
+            {
+                breakpoint: 960,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 });

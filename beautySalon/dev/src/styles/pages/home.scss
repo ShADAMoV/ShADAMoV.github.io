@@ -5,3 +5,24 @@
 @use '../components/marquee';
 @use '../components/info';
 @use '../components/slider';
+@use '../components/result';
+
+
+.separator {
+    display: flex;
+    width: 100%;
+    margin-bottom: 60px;
+
+    &__left, &__right {
+        width: 50%;
+        height: 0.5px;
+    }
+
+    &__left {
+        background: linear-gradient(to left, #000 -100%, transparent 100%);
+    }
+
+    &__right {
+        background: linear-gradient(to right, #000 -100%, transparent 100%);
+    }
+}

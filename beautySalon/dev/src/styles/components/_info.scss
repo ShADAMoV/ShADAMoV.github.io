@@ -125,10 +125,6 @@
     .services__item {
         max-width: 300px;
     }
-
-    [class*="container"] {
-        max-width: 980px;
-    }
 }
 
 @media (max-width: 960px) {
@@ -142,10 +138,6 @@
 
     .statistics__item:not(:last-child) {
         margin-bottom: 40px;
-    }
-
-    [class*="container"] {
-        max-width: 600px;
     }
 
     .services {
