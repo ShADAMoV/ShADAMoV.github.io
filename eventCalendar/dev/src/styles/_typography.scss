@@ -1,0 +1,89 @@
+@use './variables' as v;
+
+.block-title {
+    font-weight: 500;
+    font-size: 32px;
+    color: v.$white;
+
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
+}
+
+.general__year, .general__month {
+    font-weight: 500;
+    font-size: 32px;
+    display: flex;
+    color: v.$dark-dim-red;
+
+    @media (max-width: 420px) {
+        font-size: 24px;
+    }
+}
+
+.general__day {
+    font-weight: 500;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: v.$green;
+
+    @media (max-width: 420px) {
+        font-size: 20px;
+    }
+}
+
+.general__events-count {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: v.$white;
+
+    @media (max-width: 420px) {
+        font-size: 8px;
+    }
+}
+
+.general__day_active {
+    color: v.$white;
+}
+
+.general__download {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-decoration-line: underline;
+    color: v.$black;
+}
+
+.event-list__time {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: v.$green;
+}
+
+.event-list__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: v.$dim-black;
+}
+
+.event-list__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: v.$black;
+}
+
+.event-list__button {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: v.$white;
+    cursor: pointer;
+}

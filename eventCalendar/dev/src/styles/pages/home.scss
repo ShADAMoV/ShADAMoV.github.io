@@ -1,0 +1,115 @@
+@use '../variables' as v;
+
+.general {
+    margin: 100px 0;
+    
+    @media (max-width: 570px) {
+        margin: 0;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: v.$dim-gray;
+        border-radius: 0px 0px 20px 20px;
+        padding: 25px 20px;
+
+        @media (max-width: 550px) {
+            border-radius: 0;
+        }
+    }
+
+    &__years, &__months {
+        display: flex;
+        background: v.$white;
+        border-radius: 0px 0px 20px 20px;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5px 30px;
+        cursor: pointer;
+        transition: all 0.4s;
+    }
+
+    &__years:hover, &__months:hover {
+        box-shadow: 0px 2px 6px 3px rgba(0, 0, 0, 0.51);
+    }
+
+    &__months {
+        margin-top: 30px;
+
+        @media (max-width: 420px) {
+            margin-top: 15px;
+        }
+    }
+
+    &__dot {
+        width: 12px;
+        height: 12px;
+        background: #D9D9D9;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    &__year, &__month {
+        margin: 0 25px;
+        cursor: pointer;
+    }
+
+    &__days {
+        background: v.$opaciti-red;
+        margin-top: 20px;
+        border-radius: 20px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 30px 15px;
+
+        @media (max-width: 870px) {
+            justify-content: center;
+        }
+        
+    }
+
+    &__day {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 70px;
+        background: v.$white;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all .5s; /* Animation */
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.51);
+        }
+
+        @media (max-width: 420px) {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    &__day_active {
+        background: linear-gradient(180deg, rgba(69, 124, 121, 0.98) 0%, #3AAFA9 100%);
+        box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.51);
+        border-radius: 20px;
+    }
+
+    &__events-count {
+        white-space: nowrap;
+    }
+
+    &__day_inactive {
+        background: rgba(217, 217, 217, 0.8);
+    }
+
+    &__download {
+        margin-top: 20px;
+        cursor: pointer;
+    }
+}   

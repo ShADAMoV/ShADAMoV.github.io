@@ -1,0 +1,76 @@
+@use '../variables' as v;
+
+.event-list {
+    margin: 100px 0;
+    
+    @media (max-width: 570px) {
+        margin: 0;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        justify-content: space-between;
+        background: v.$dim-gray;
+        border-radius: 0px 0px 20px 20px;
+        padding: 25px 20px;
+
+        @media (max-width: 550px) {
+            border-radius: 0;
+        }
+    }
+
+    &__item {
+        width: 31%;
+        padding: 10px 20px;
+        background-color: v.$white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+
+        @media (max-width: 800px) {
+            width: 48%;
+        }
+
+        @media (max-width: 500px) {
+            width:100%;
+        }
+    }
+
+    &__time {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    &__image {
+        width: 100%;
+        margin-bottom: 10px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        text-align: center;
+        margin-bottom: 20px;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    &__button {
+        padding: 10px 20px;
+        background: linear-gradient(180deg, rgba(69, 124, 121, 0.98) 0%, #3AAFA9 100%);
+        border-radius: 10px;
+        text-align: center;
+    }
+}
