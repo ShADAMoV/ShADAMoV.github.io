@@ -87,3 +87,49 @@
     color: v.$white;
     cursor: pointer;
 }
+
+.event-list__download {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: v.$black;
+}
+
+.event__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: v.$black;
+
+    
+    @media (max-width: 570px) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+.participants__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    color: v.$black;
+}
+
+.participants__download {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: v.$black;
+}
+
+.participants__gallery {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: v.$dim-black;
+}

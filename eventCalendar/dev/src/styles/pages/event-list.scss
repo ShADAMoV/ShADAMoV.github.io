@@ -16,19 +16,20 @@
         border-radius: 0px 0px 20px 20px;
         padding: 25px 20px;
 
-        @media (max-width: 550px) {
+        @media (max-width: 570px) {
             border-radius: 0;
         }
     }
 
     &__item {
         width: 31%;
-        padding: 10px 20px;
+        padding: 10px 20px 25px;
         background-color: v.$white;
         display: flex;
         flex-direction: column;
         align-items: center;
         border-radius: 20px;
+        box-shadow: 0px 1px 8px 1px rgb(0 0 0 / 50%);
 
         @media (max-width: 800px) {
             width: 48%;
@@ -40,7 +41,7 @@
     }
 
     &__time {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         text-align: center;
     }
 
@@ -72,5 +73,23 @@
         background: linear-gradient(180deg, rgba(69, 124, 121, 0.98) 0%, #3AAFA9 100%);
         border-radius: 10px;
         text-align: center;
+        transition: all 0.4s;
+    }
+
+    &__button:hover {
+        transform: scale(0.95);
+    }
+
+    &__download {
+        width: 100%;
+        text-align: center;
+        margin-top: 35px;
+        text-decoration-line: underline;
+        cursor: pointer;
+        transition: all 0.4s;
+    }
+    
+    &__download:hover {
+        transform: scale(0.95);
     }
 }
