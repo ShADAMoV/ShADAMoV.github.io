@@ -1,7 +1,7 @@
 @use '../variables' as v;
 
 .event {
-    margin: 100px 0;
+    margin: 25px 0;
     
     @media (max-width: 570px) {
         margin: 0;

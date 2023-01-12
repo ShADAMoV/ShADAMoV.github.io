@@ -7,6 +7,14 @@
     <title>Календарь событий</title>
 </head>
 <body>
+    <header class="header">
+        <a href='#' class="header__logo">
+            <img src="../src/assets/images/logo.png" alt="">
+        </a>
+        <a href="#" class="header__nav">
+            Добавить событие
+        </a>
+    </header>
     <section class="general">
         <div class="container">
             <div class="block-title">Календарь событий</div>
@@ -15,11 +23,36 @@
                     <div class="general__dot"></div>
                     <div class="general__year">2023</div>
                     <div class="general__dot"></div>
+                    <div class="date-select" id="year-select">
+                        <div class="date-select__list">
+                            <div class="date-select__item">2023</div>
+                            <div class="date-select__item">2022</div>
+                            <div class="date-select__item">2021</div>
+                            <div class="date-select__item">2020</div>
+                            <div class="date-select__item">2019</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="general__months">
                     <div class="general__dot"></div>
                     <div class="general__month">Февраль</div>
                     <div class="general__dot"></div>
+                    <div class="date-select" id="month-select">
+                        <div class="date-select__list">
+                            <div class="date-select__item">Январь</div>
+                            <div class="date-select__item">Февраль</div>
+                            <div class="date-select__item">Март</div>
+                            <div class="date-select__item">Апрель</div>
+                            <div class="date-select__item">Май</div>
+                            <div class="date-select__item">Июнь</div>
+                            <div class="date-select__item">Июль</div>
+                            <div class="date-select__item">Август</div>
+                            <div class="date-select__item">Сентябрь</div>
+                            <div class="date-select__item">Октябрь</div>
+                            <div class="date-select__item">Ноябрь</div>
+                            <div class="date-select__item">Декабрь</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="general__days">
                     <div class="general__day">1</div>

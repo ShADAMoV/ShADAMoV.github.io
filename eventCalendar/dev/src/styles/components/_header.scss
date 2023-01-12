@@ -1,0 +1,32 @@
+@use '../variables' as v;
+
+.header {
+    background: rgba(200, 193, 193, 0.3);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+
+    &__logo {
+        width: 50px;
+        height: 50px;
+        background: v.$dark-grin;
+        border-radius: 50%;
+
+        img {
+            width: 100%; height: 100%;
+        }
+    }
+
+    &__nav {
+        cursor: pointer;
+        margin-left: 20px;
+        padding: 8px 14px;
+        border: 1px solid v.$dim-black;
+        border-radius: 20px;
+        background: v.$dark-grin;
+        white-space: nowrap;
+    }
+}

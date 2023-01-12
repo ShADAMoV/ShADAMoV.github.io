@@ -133,3 +133,35 @@
     letter-spacing: 0.05em;
     color: v.$dim-black;
 }
+
+.date-select__item {
+    font-size: 26px;
+    color: v.$dark-dim-red;
+}
+
+.date-select__item:hover {
+    color: v.$dark-grin;
+}
+
+.add-event__title {
+    font-weight: 500;
+    font-size: 32px;
+    color: v.$dim-black;
+}
+
+.add-event__subtitle {
+    font-weight: 500;
+    font-size: 26px;
+    color: v.$dim-black;
+}
+
+.header__nav {
+    font-size: 22px;
+    color: v.$white;
+    font-weight: 700;
+    text-shadow: 0.5px 1px v.$black;
+
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
+}

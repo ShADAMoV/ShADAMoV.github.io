@@ -1,7 +1,7 @@
 @use '../variables' as v;
 
 .general {
-    margin: 100px 0;
+    margin: 25px 0;
     
     @media (max-width: 570px) {
         margin: 0;
@@ -29,10 +29,16 @@
         padding: 5px 30px;
         cursor: pointer;
         transition: all 0.4s;
+        position: relative;
     }
 
     &__years:hover, &__months:hover {
-        box-shadow: 0px 2px 6px 3px rgba(0, 0, 0, 0.51);
+        box-shadow: 0px 0px 0px 1px rgb(0 0 0 / 20%);
+    }
+
+    &__years_active, &__months_active {
+        border-radius: 20px 20px 0 0;
+        box-shadow: 0px 0px 0px 1px rgb(0 0 0 / 20%);
     }
 
     &__months {
@@ -54,6 +60,12 @@
     &__year, &__month {
         margin: 0 25px;
         cursor: pointer;
+    }
+
+    &__month {
+        min-width: 151px;
+        display: flex;
+        justify-content: center;
     }
 
     &__days {
@@ -106,6 +118,12 @@
 
     &__day_inactive {
         background: rgba(217, 217, 217, 0.8);
+        cursor: unset;
+    }
+
+    &__day_inactive:hover {
+        transform: unset;
+        box-shadow: unset;
     }
 
     &__download {
