@@ -1,0 +1,35 @@
+@use '../variables' as v;
+
+.add-event {
+    margin: 25px 0;
+    
+    @media (max-width: 570px) {
+        margin: 0;
+    }
+
+    &__content {
+        width: 100%;
+        border-radius: 0px 0px 20px 20px;
+        padding: 25px 20px;
+        background: v.$dim-gray;
+
+        @media (max-width: 570px) {
+            border-radius: 0;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    &__button {
+        width: fit-content;
+        margin: 0 auto;
+        padding: 20px 30px;
+        color: white;
+        background: linear-gradient(180deg, rgba(69, 124, 121, 0.98) 0%, #3AAFA9 100%);
+        border-radius: 20px;
+        cursor: pointer;
+    }
+}
