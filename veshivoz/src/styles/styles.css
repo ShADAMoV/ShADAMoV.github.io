@@ -151,12 +151,12 @@ html {
   background: url("../assets/images/banner_bg.jpg") top center no-repeat;
   width: 100%;
   margin-bottom: 120px;
-  background-size: cover;
+  background-size: 100%;
 }
 
 @media (min-width: 1920px) {
   .header-wrapper {
-    background-size: contain;
+    background-size: 100%;
   }
 }
 
